@@ -23,6 +23,6 @@ def diabetes_prediction(data:PatientData):
         data.age
     ]).reshape(1,8) # numero de filas y columnas 
     prediction = RF_model2.predict(xin)
-    print("prediction", prediction)
+    print("prediccion", prediction)
 
     return labels[prediction[0]]
